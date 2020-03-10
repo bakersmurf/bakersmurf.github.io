@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // WebGL - Same Code - Resize
 // from https://webglfundamentals.org/webgl/webgl-same-code-resize.html
 
@@ -10,3 +11,10 @@ $(function() {
     draggingClass: "dragging",
   });
 });
+=======
+window.onload = window.onresize = function() {
+    var canvas = document.getElementById('canvas');
+    canvas.width = window.innerWidth * 0.8;
+    canvas.height = window.innerHeight * 0.8;
+}
+>>>>>>> parent of 13b9566... window centers!
