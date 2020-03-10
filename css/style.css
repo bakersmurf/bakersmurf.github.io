@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+#editor td {
+  padding: 0px;
+}
+#editor {
+  border-spacing: 0px;
+  width: 100%;
+  height: 100%;
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#viewContainer {
+  width: 70%
+}
+#controlContainer {
+  width: 30%;
+}
+#controls {
+  border-left: 5px solid black;
+  background-color:#666;
+  color: white;
+  padding: 0px 0.5em 0px 0.5em;
+  width: 100%;
+  height: 100%;
+  font-size: large;
+}
