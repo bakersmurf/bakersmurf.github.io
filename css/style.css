@@ -24,10 +24,10 @@ body {
   display: block;
 }
 #viewContainer {
-  width: 70%
+  width: 100%
 }
 #controlContainer {
-  width: 30%;
+  width: 100%;
 }
 #controls {
   border-left: 5px solid black;
