@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Rectangle example</title>
+  <title>Rectangle example</title>
 </head>
+
 <body>
-<canvas id="DemoCanvas" width="1024" height="600"></canvas>
-<script>
-var canvas = document.getElementById("DemoCanvas");
-if (canvas.getContext)
-{
-  var ctx = canvas.getContext('2d');
-  ctx.fillStyle='#556B2F';    // Dark Olive Green Fill
-  ctx.fillRect(0, 0, 1024, 400); // create rectangle
-  ctx.lineWidth = "12";
-  ctx.strokeStyle = "#D2B48C";
-  ctx.strokeRect(0, 0, 1024, 400);
-}
-</script>
+  <canvas id="canvas" width="1024" height="600"></canvas>
+  <script>
+    var canvas = document.getElementById('canvas');
+    canvas.width = window.innerWidth * .8;
+    canvas.height = window.innerHeight * .8;
+
+    // start working with canvas - paint black to make visible
+    ctx = canvas.getContext('2d');
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    /*
+    var canvas = document.getElementById("DemoCanvas");
+    if (canvas.getContext)
+    {
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle='#556B2F';    // Dark Olive Green Fill
+      ctx.fillRect(0, 0, 1024, 400); // create rectangle
+      ctx.lineWidth = "12";
+      ctx.strokeStyle = "#D2B48C";
+      ctx.strokeRect(0, 0, 1024, 400);
+    }
+    */
+  </script>
 </body>
+
 </html>
