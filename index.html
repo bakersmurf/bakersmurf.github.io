@@ -14,8 +14,11 @@
 
     // start working with canvas - paint black to make visible
     ctx = canvas.getContext('2d');
-    ctx.fillStyle = "#000";
+    ctx.fillStyle = "#556B2F";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.lineWidth = "12";
+    ctx.strokeStyle = "#D2B48C";
+    ctx.strokeRect(0, 0, canvas.width, canvas.height);
     /*
     var canvas = document.getElementById("DemoCanvas");
     if (canvas.getContext)
